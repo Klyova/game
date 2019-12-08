@@ -1,0 +1,317 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title test_task
+  meta(name='Description', content='test_task')
+  meta(name='Keywords', content='')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  link(rel='shortcut icon', href='i/favicon.png')
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap&subset=cyrillic', rel='stylesheet')
+  link(href='css/css.css', rel='stylesheet', type='text/css')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/sumoselect.min.css')
+  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.css')
+  script(type='text/javascript', src='js/jquery-3.3.1.min.js')
+  script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js')
+  script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js')
+  script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js')
+  script(src='https://www.chartjs.org/samples/latest/utils.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/jquery.sumoselect.min.js')
+  script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js')
+  script(type='text/javascript', src='js/local.js')
+header.header
+  .header_top
+    a(href='#')
+      .btn_open
+    a(href='#')
+      .logo
+    .header_top_describe
+      span Affiliate program
+    span.sum 9 999 999.99 USD
+    a(href='#')
+      .btn_user
+  .header_bottom
+    .header_bottom_text &Scy;&tcy;&acy;&tcy;&icy;&scy;&tcy;&icy;&kcy;&acy; &zcy;&acy; &scy;&iecy;&gcy;&ocy;&dcy;&ncy;&yacy;
+    .down_box
+      .down_box_text
+        ul.down_box_list
+          li.down_box_item
+            img(src='i/date.svg', alt='')
+            .down_box_describe
+              span.text 07.02.2019, &chcy;&tcy;
+          li.item
+            img(src='i/transitions.svg', alt='')
+            .down_box_describe(style='margin-left: 24px;')
+              span.down_box_text &Pcy;&iecy;&rcy;&iecy;&khcy;&ocy;&dcy;&ycy;:
+              span.number 1 000
+          li.item
+            img(src='i/registration.svg', alt='')
+            .down_box_describe
+              span.text &Rcy;&iecy;&gcy;&icy;&scy;&tcy;&rcy;&acy;&tscy;&icy;&icy;:
+              span.number 10 000
+          li.item
+            img(src='i/deposits.svg', alt='')
+            .down_box_describe
+              span.text &Pcy;&iecy;&rcy;&vcy;&ycy;&iecy; &dcy;&iecy;&pcy;&ocy;&zcy;&icy;&tcy;&ycy;:
+              span.number 100
+          li.item
+            img(src='i/income.svg', alt='')
+            .down_box_describe
+              span.text &Dcy;&ocy;&khcy;&ocy;&dcy; &zcy;&acy; &scy;&iecy;&gcy;&ocy;&dcy;&ncy;&yacy;:
+              span.number 1 000.00 USD
+      .arrow_down
+        img(src='i/arrow_down.svg', alt='')
+    .header_bottom_user
+      .user_icons
+        .picture_envelope
+          img(src='i/envelope.svg', alt='')
+        .line
+        .name &Acy;&lcy;&iecy;&kcy;&scy;&acy;&ncy;...
+        .line
+        .picture_arrow
+          img(src='i/arrow.svg', alt='')
+        .line
+        .picture_settings
+          img(src='i/settings.svg', alt='')
+        .line
+        .picture_flag
+          img(src='i/flag.svg', alt='')
+      .user_sum
+        span 0.00 USD
+    .header_bottom_bar
+      ul.bar_list
+        li.bar_item
+          img(src='i/date.svg', alt='')
+          .bar_describe
+            span.text 07.02.2019, &chcy;&tcy;
+        li.bar_item
+          img(src='i/transitions.svg', alt='')
+          .bar_describe
+            span.number 1 000
+            span.text &Pcy;&iecy;&rcy;&iecy;&khcy;&ocy;&dcy;&ycy;
+        li.bar_item
+          img(src='i/registration.svg', alt='')
+          .bar_describe
+            span.number 10 000
+            span.text &Rcy;&iecy;&gcy;&icy;&scy;&tcy;&rcy;&acy;&tscy;&icy;&icy;
+        li.bar_item
+          img(src='i/deposits.svg', alt='')
+          .bar_describe
+            span.number 100
+            span.text &Pcy;&iecy;&rcy;&vcy;&ycy;&iecy; &dcy;&iecy;&pcy;&ocy;&zcy;&icy;&tcy;&ycy;
+        li.bar_item
+          img(src='i/income.svg', alt='')
+          .bar_describe
+            span.number 100 000.00 USD
+            span.text &Dcy;&ocy;&khcy;&ocy;&dcy; &zcy;&acy; &scy;&iecy;&gcy;&ocy;&dcy;&ncy;&yacy; 
+.container
+  .user_card
+    aside.card
+      .user_card_icons
+        .picture_envelope
+          img(src='i/envelope.svg', alt='')
+        .line
+        .user_card_name &Acy;&lcy;&iecy;&kcy;&scy;&acy;&ncy;&dcy;&rcy; &Acy;&lcy;&iecy;&kcy;&scy;&acy;&ncy;&dcy;...
+        .line
+        .picture_flag
+          img(src='i/flag.svg', alt='')
+      .total_sum 9 999 999.99 USD
+      nav.navigation.mCustomScrollbar
+        ul#accordion1.accordion1
+          li
+            .link
+              img(src='i/build.svg', alt='')
+              span &Pcy;&rcy;&ocy;&fcy;&icy;&lcy;&softcy;
+            ul.submenu
+              li
+                a(href='#') Photoshop
+              li
+                a(href='#') HTML
+              li
+                a(href='#') CSS
+          li
+            .link
+              img(src='i/list.svg', alt='')
+              span &Dcy;&ocy;&kcy;&ucy;&mcy;&iecy;&ncy;&tcy;&acy;&tscy;&icy;&yacy;
+            ul.submenu
+              li
+                a(href='#') Javascript
+              li
+                a(href='#') jQuery
+              li
+                a(href='#') Ruby
+              li
+                a(href='#') Javascript
+              li
+                a(href='#') jQuery
+              li
+                a(href='#') Ruby
+          li
+            .link
+              img(src='i/static.svg', alt='')
+              span &Pcy;&acy;&rcy;&tcy;&ncy;&iecy;&rcy;&scy;&kcy;&ocy;&iecy; &scy;&ocy;&gcy;&lcy;&acy;&shcy;&iecy;&ncy;&icy;&iecy;
+            ul.submenu
+              li
+                a(href='#') Tablet
+              li
+                a(href='#') Mobile
+              li
+                a(href='#') Desktop
+          li
+            .link
+              img(src='i/finance.svg', alt='')
+              span FAQ
+          li
+            .link
+              img(src='i/news.svg', alt='')
+              span &Vcy;&ycy;&jcy;&tcy;&icy;
+      .left_menu_bottom
+        .manager
+          .manager_title &Vcy;&acy;&shcy; &pcy;&iecy;&rcy;&scy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ycy;&jcy; &mcy;&iecy;&ncy;&iecy;&dcy;&zhcy;&iecy;&rcy;:
+          .manager_name &Icy;&mcy;&yacy;: &Dcy;&mcy;&icy;&tcy;&rcy;&icy;&jcy; 
+          .telegram Telegram: @dm_montana
+          .mail E-Mail: Manager@pin-up.partners
+        .transaction
+          img(src='i/user-arrow.svg', alt='')
+          .transaction_describe
+            span.transaction_number 1 000.00 USD
+            span &Rcy;&iecy;&fcy;&iecy;&rcy;&acy;&lcy;&softcy;&ncy;&ycy;&iecy;
+          img(src='i/circle.svg', alt='')
+  aside.left_menu
+    nav.navigation.mCustomScrollbar
+      ul#accordion.accordion
+        li
+          .link
+            img(src='i/build.svg', alt='')
+            span &Gcy;&lcy;&acy;&vcy;&ncy;&acy;&yacy;
+          ul.submenu
+            li
+              a(href='#') Photoshop
+            li
+              a(href='#') HTML
+            li
+              a(href='#') CSS
+        li
+          .link
+            img(src='i/list.svg', alt='')
+            span &Pcy;&rcy;&ocy;&mcy;&ocy;
+          ul.submenu
+            li
+              a(href='#') Javascript
+            li
+              a(href='#') jQuery
+            li
+              a(href='#') Ruby
+            li
+              a(href='#') Javascript
+            li
+              a(href='#') jQuery
+            li
+              a(href='#') Ruby
+        li
+          .link
+            img(src='i/static.svg', alt='')
+            span &Scy;&tcy;&acy;&tcy;&icy;&scy;&tcy;&icy;&kcy;&acy;
+          ul.submenu
+            li
+              a(href='#') Tablet
+            li
+              a(href='#') Mobile
+            li
+              a(href='#') Desktop
+        li
+          .link
+            img(src='i/finance.svg', alt='')
+            span &Fcy;&icy;&ncy;&acy;&ncy;&scy;&ycy;
+        li
+          .link
+            img(src='i/news.svg', alt='')
+            span &Ncy;&ocy;&vcy;&ocy;&scy;&tcy;&icy;
+        li
+          .link
+            img(src='i/support.svg', alt='')
+            span &Pcy;&ocy;&dcy;&dcy;&iecy;&rcy;&zhcy;&kcy;&acy;
+    .left_menu_bottom
+      .manager
+        .manager_title &Vcy;&acy;&shcy; &pcy;&iecy;&rcy;&scy;&ocy;&ncy;&acy;&lcy;&softcy;&ncy;&ycy;&jcy; &mcy;&iecy;&ncy;&iecy;&dcy;&zhcy;&iecy;&rcy;:
+        .manager_name &Icy;&mcy;&yacy;: &Dcy;&mcy;&icy;&tcy;&rcy;&icy;&jcy; 
+        .telegram Telegram: @dm_montana
+        .mail E-Mail: Manager@pin-up.partners
+      .transaction
+        img(src='i/user-arrow.svg', alt='')
+        .transaction_describe
+          span.transaction_number 1 000.00 USD
+          span &Rcy;&iecy;&fcy;&iecy;&rcy;&acy;&lcy;&softcy;&ncy;&ycy;&iecy;
+        img(src='i/circle.svg', alt='')
+  section.main_content
+    .owl-carousel
+      .my_picture
+        img(src='i/image_1.jpg', alt='')
+      .my_picture
+        img(src='i/image_2.jpg', alt='')
+      .my_picture
+        img(src='i/image_3.jpg', alt='')
+    .content
+      .content_left
+        .top_bar
+          .top_dropdown
+            select.testselect1(name='somename')
+              option(value='sum') &Scy;&ucy;&mcy;&mcy;&acy; &dcy;&ocy;&khcy;&ocy;&dcy;&acy;
+              option(value='meet') &Scy;&ocy;&bcy;&ycy;&tcy;&icy;&yacy;
+              option(value='news') &Ncy;&ocy;&vcy;&ocy;&iecy;
+              option(value='books') &Kcy;&ncy;&icy;&gcy;&icy;
+          .top_time
+            .period
+              span.period_text &Pcy;&iecy;&rcy;&icy;&ocy;&dcy;:
+              span.period_date 01.01.19
+              img(src='i/calendar_1.svg', alt='')
+              span.period_date 08.01.19
+            select#testselect2.testselect2(name='somename')
+              option(value='sum') &Dcy;&iecy;&ncy;&softcy;
+              option(value='meet') &Ncy;&iecy;&dcy;&iecy;&lcy;&yacy;
+              option(value='news') &Mcy;&iecy;&scy;&yacy;&tscy;
+            .day &Dcy;&iecy;&ncy;&softcy;
+            .week &Ncy;&iecy;&dcy;&iecy;&lcy;&yacy;
+            .month &Mcy;&iecy;&scy;&yacy;&tscy;
+        .graph
+          canvas#canvas
+      aside.right_news
+        .right_head
+          img(src='i/new.svg', alt='')
+          span &Pcy;&ocy;&scy;&lcy;&iecy;&dcy;&ncy;&icy;&iecy; &ncy;&ocy;&vcy;&ocy;&scy;&tcy;&icy;
+          a(href='#')  &Vcy; &rcy;&acy;&zcy;&dcy;&iecy;&lcy;
+        .right_news_list
+          .right_new
+            span &times;
+            .right_news_date 07 &fcy;&iecy;&vcy;&rcy;&acy;&lcy;&yacy; 2019
+            .right_news_head &Scy;&ucy;&pcy;&iecy;&rcy; &acy;&kcy;&tscy;&icy;&yacy; &ncy;&ocy;&yacy;&bcy;&rcy;&yacy;!!!
+            .right_news_text &Mcy;&ycy; &ocy;&bcy;&hardcy;&yacy;&vcy;&lcy;&yacy;&iecy;&mcy; &scy;&tcy;&acy;&rcy;&tcy; &acy;&kcy;&tscy;&icy;&icy; &quot;&YAcy;&bcy;&lcy;&ocy;&kcy;&icy; &ncy;&acy; &scy;&ncy;&iecy;&gcy;&ucy;&quot;!!...
+            a(href='#') &Pcy;&ocy;&dcy;&rcy;&ocy;&bcy;&ncy;&iecy;&iecy;
+          .right_new
+            span &times;
+            .right_news_date 07 &fcy;&iecy;&vcy;&rcy;&acy;&lcy;&yacy; 2019
+            .right_news_head &Scy;&ucy;&pcy;&iecy;&rcy; &acy;&kcy;&tscy;&icy;&yacy; &ncy;&ocy;&yacy;&bcy;&rcy;&yacy;!!!
+            .right_news_text &Mcy;&ycy; &ocy;&bcy;&hardcy;&yacy;&vcy;&lcy;&yacy;&iecy;&mcy; &scy;&tcy;&acy;&rcy;&tcy; &acy;&kcy;&tscy;&icy;&icy; &quot;&YAcy;&bcy;&lcy;&ocy;&kcy;&icy; &ncy;&acy; &scy;&ncy;&iecy;&gcy;&ucy;&quot;!!...
+            a(href='#') &Pcy;&ocy;&dcy;&rcy;&ocy;&bcy;&ncy;&iecy;&iecy;
+          .right_new
+            span &times;
+            .right_news_date 07 &fcy;&iecy;&vcy;&rcy;&acy;&lcy;&yacy; 2019
+            .right_news_head &Scy;&ucy;&pcy;&iecy;&rcy; &acy;&kcy;&tscy;&icy;&yacy; &ncy;&ocy;&yacy;&bcy;&rcy;&yacy;!!!
+            .right_news_text &Mcy;&ycy; &ocy;&bcy;&hardcy;&yacy;&vcy;&lcy;&yacy;&iecy;&mcy; &scy;&tcy;&acy;&rcy;&tcy; &acy;&kcy;&tscy;&icy;&icy; &quot;&YAcy;&bcy;&lcy;&ocy;&kcy;&icy; &ncy;&acy; &scy;&ncy;&iecy;&gcy;&ucy;&quot;!!...
+            a(href='#') &Pcy;&ocy;&dcy;&rcy;&ocy;&bcy;&ncy;&iecy;&iecy;
+        .right_social
+          .right_social_title &Pcy;&ocy;&dcy;&pcy;&icy;&shcy;&icy;&scy;&softcy;
+          .icons
+            .icon
+              img(src='i/telegram.svg', alt='')
+            .icon
+              img(src='i/fb.svg', alt='')
+            .icon
+              img(src='i/vk.svg', alt='')
+            .icon
+              img(src='i/twiter.svg', alt='')
+            .icon
+              img(src='i/instagram.svg', alt='')
+            .icon
+              img(src='i/soc.svg', alt='')

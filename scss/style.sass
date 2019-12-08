@@ -1,0 +1,654 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+body
+  font-family: 'Open Sans', sans-serif
+  margin: 0
+  font-size: 16px
+  line-height: 22px
+  font-weight: 400
+  color: #FFFFFF
+  font-style: normal
+  background-color: #2B2B2B
+  overflow-x: hidden
+  width: 100%
+  height: 100%
+
+.header
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 10
+  background-color: #2B2B2B
+
+  .header_top
+    height: 60px
+    position: relative
+    display: flex
+
+    .logo
+      width: 242px
+      position: relative
+      height: 100%
+      max-height: 60px
+      display: block
+      background: url(../i/logo.svg) no-repeat 50% 50%
+
+      img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        max-width: 240px
+        max-height: 60px
+        object-fit: contain
+
+    .header_top_describe
+      margin: 0 12px
+      border-bottom: 4px solid #E03D22
+      width: 100%
+      font-weight: bold
+      font-size: 20px
+      line-height: 27px
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      text-transform: uppercase
+
+  .header_bottom
+    display: flex
+    height: 77px
+
+    .header_bottom_user .user_icons
+      display: flex
+      justify-content: space-around
+      align-items: center
+      padding: 0 8px
+
+    .header_bottom_bar
+      display: block
+      width: 100%
+      border-bottom: 1px solid #5C5C5C
+      border-top: 1px solid #5C5C5C
+
+      .bar_list
+        display: flex
+        height: 77px
+        width: 100%
+        justify-content: space-around
+        align-items: center
+
+        .bar_item
+          list-style: none
+          list-style: none
+          display: flex
+          justify-content: space-around
+          width: 100%
+          border-right: 1px solid #5C5C5C
+          height: 100%
+          align-items: center
+
+.line
+  display: block
+  width: 1px
+  height: 28px
+  background: #5C5C5C
+
+.header .header_bottom
+  .header_bottom_user
+    border: 1px solid #5C5C5C
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 100%
+    max-width: 240px
+
+    .user_sum
+      font-size: 24px
+      line-height: 33px
+      display: flex
+      align-items: center
+      padding: 0 8px
+
+  .header_bottom_bar .bar_list .bar_item .bar_describe .number
+    font-size: 24px
+    line-height: 33px
+    display: flex
+    align-items: center
+    text-align: center
+
+.transaction
+  display: flex
+  align-items: center
+  text-align: center
+  padding: 16px 8px
+  justify-content: space-around
+
+.transaction_number
+  font-size: 24px
+  line-height: 33px
+
+.transaction_describe
+  display: flex
+  flex-direction: column
+
+.header .header_bottom .header_bottom_bar .bar_list .bar_item:last-child .number
+  color: #00B195
+
+ul
+  list-style-type: none
+
+.container
+  display: flex
+  margin-top: 137px
+
+.left_menu
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 240px
+
+.accordion, .accordion1
+  width: 100%
+  max-width: 240px
+  display: flex
+  flex-direction: column
+
+.accordion .link, .accordion1 .link
+  cursor: pointer
+  height: 64px
+  position: relative
+  -webkit-transition: all 0.4s ease
+  -o-transition: all 0.4s ease
+  transition: all 0.4s ease
+  font-family: Open Sans
+  font-style: normal
+  font-weight: normal
+  font-size: 20px
+  line-height: 27px
+  display: flex
+  align-items: center
+
+.accordion .link:hover, .accordion1 .link:hover
+  background: #1A1A1A
+  border-left: 4px solid #E03D22
+  height: 64px
+  font-weight: bold
+  font-size: 20px
+  line-height: 27px
+
+.link img
+  margin: 0 12px 0 24px
+
+.accordion li:last-child .link, .accordion1 li:last-child .link
+  border-bottom: 0
+
+.accordion li i, .accordion1 li i
+  position: absolute
+  top: 16px
+  left: 12px
+  font-size: 18px
+  color: #595959
+  -webkit-transition: all 0.4s ease
+  -o-transition: all 0.4s ease
+  transition: all 0.4s ease
+
+.accordion li.open .link, .accordion1 li.open .link
+  height: 64px
+  font-weight: bold
+  font-size: 20px
+  line-height: 27px
+
+.accordion li.open .link img, .accordion1 li.open .link img
+  filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-50deg) saturate(830%) contrast(0.9)
+
+.submenu
+  display: none
+  font-size: 16px
+
+  a
+    display: block
+    text-decoration: none
+    color: #d9d9d9
+    padding: 12px
+    padding-left: 42px
+    -webkit-transition: all 0.25s ease
+    -o-transition: all 0.25s ease
+    transition: all 0.25s ease
+
+    &:hover
+      background: #1A1A1A
+
+.container .left_menu_bottom .manager
+  .manager_title
+    font-weight: bold
+    font-size: 12px
+    line-height: 16px
+    margin-bottom: 10px
+
+  font-size: 12px
+  line-height: 16px
+  padding: 15px 8px
+  border-top: 1px solid #5C5C5C
+  border-bottom: 1px solid #5C5C5C
+
+  .manager_name, .telegram
+    margin-bottom: 10px
+
+.main_content
+  display: block
+  max-width: calc(100% - 240px)
+  background-color: #F3F3F3
+
+.owl-carousel .owl-item img
+  height: 300px
+  display: flex !important
+  width: 100%
+  align-items: stretch
+  justify-content: stretch
+
+.my_picture, .owl-carousel
+  max-height: 300px
+
+.no-js .owl-carousel, .owl-carousel.owl-loaded
+  height: 300px
+
+.SumoSelect >
+  .CaptionCont, .optWrapper
+    color: #1A1A1A
+    background: linear-gradient(180deg, #FFFFFF 0%, #CDCDCD 100%) !important
+
+.rot
+  -ms-transform: rotate(180deg)
+  -webkit-transform: rotate(180deg)
+  transform: rotate(180deg)
+
+.main_content .content .top_bar
+  margin: 15px 12px 15px 12px
+  display: inline-flex
+  align-items: center
+  justify-content: space-between
+  height: 40px
+  border-radius: 3px
+  background-color: #2B2B2B
+
+.SelectBox
+  padding: 3px 4px !important
+
+.SumoSelect >
+  .CaptionCont > span
+    padding-right: 15px !important
+
+  .optWrapper > .options li.opt:hover
+    color: red
+
+.graph
+  margin: 12px 12px 12px 12px
+
+.main_content .content
+  display: flex
+
+  .content_left
+    width: 80%
+    display: flex
+    flex-direction: column
+
+  .top_bar
+    .top_dropdown
+      margin-left: 8px
+
+    .top_time
+      align-items: center
+      text-align: center
+      display: flex
+
+.day, .week, .month
+  color: #5C5C5C
+  padding: 9px 16px
+  border-left: 1px solid #5C5C5C
+
+.day:hover, .week:hover, .month:hover, .day:active, .week:active, .month:active
+  color: #FFFFFF
+  font-weight: bold
+  border-bottom: 4px solid #E03D22
+  padding: 7px 16px
+
+.main_content
+  .content .top_bar .top_time .period
+    display: flex
+    align-items: center
+
+    .period_date
+      padding: 6px 16px
+      background-color: white
+      color: black
+      margin: 0 8px
+      font-size: 12px
+      line-height: 16px
+
+  .right_news
+    display: block
+    margin: 15px 12px
+    color: #000000
+    width: calc(20% - 24px)
+
+    .right_head
+      height: 40px
+      width: 100%
+      background: #2B2B2B
+      border-bottom: 4px solid #E03D22
+      border-radius: 3px
+      display: inline-flex
+      align-items: center
+      justify-content: space-around
+      margin-bottom: 10px
+      color: #FFFFFF
+
+      span
+        font-weight: bold
+        font-size: 16px
+        line-height: 22px
+
+      a
+        color: #FFFFFF
+
+    .right_news_list .right_new
+      background: linear-gradient(180deg, #FFFFFF 0%, #CDCDCD 100%)
+      border-radius: 3px
+      padding: 10px 15px
+      position: relative
+      margin-bottom: 5px
+
+      span
+        position: absolute
+        right: 8px
+        top: 8px
+        width: 10px
+        height: 10px
+        color: #5C5C5C
+        cursor: pointer
+
+.right_news_date
+  color: #878787
+  margin-bottom: 15px
+
+.right_news_head
+  font-weight: bold
+  text-decoration-line: underline
+  margin-bottom: 15px
+
+.right_news_text
+  margin-bottom: 6px
+
+.right_new a
+  text-align: right
+  display: block
+  color: #000000
+
+.right_social_title
+  margin: 25px 0 21px 0
+  font-weight: bold
+
+.main_content .right_news .right_social .icons
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  .icon
+    background: linear-gradient(180deg, #FFFFFF 0%, #CDCDCD 100%)
+    border-radius: 4px
+    width: 41px
+    height: 41px
+    display: flex
+    align-items: center
+    justify-content: center
+
+    &:hover
+      background: rgb(245, 244, 244)
+      background: linear-gradient(-180deg, rgba(245, 244, 244, 1) 0%, rgba(184, 184, 184, 1) 90%, rgba(255, 0, 0, 1) 90%)
+
+.btn_open, .sum, .btn_user, .header_bottom_text, .arrow_down, .user_card, .down_box
+  display: none
+
+@media screen and (max-width: 1690px)
+  .main_content
+    .content
+      display: block
+
+      .content_left
+        width: 100%
+
+    .right_news
+      width: calc(100% - 24px)
+
+  .header .header_bottom .header_bottom_bar .bar_list .bar_item .bar_describe
+    .number
+      font-size: 16px
+      line-height: 22px
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+
+    text-align: center
+
+@media screen and (max-width: 1023px)
+  .owl-carousel.owl-loaded
+    display: none !important
+
+  .left_menu
+    display: none
+
+  .header
+    .header_top .header_top_describe
+      display: none
+
+    .header_bottom
+      .header_bottom_user, .header_bottom_bar
+        display: none
+
+  .owl-carousel-news
+    display: none
+
+  .main_content
+    max-width: 100%
+
+  .container, .sum
+    display: block
+
+  .hide
+    display: none
+
+  body
+    font-size: 12px
+    line-height: 16px
+
+  .main_content
+    .content .top_bar
+      .top_dropdown
+        margin-left: 0px
+        font-size: 12px
+        line-height: 16px
+
+      margin: 15px 0
+      justify-content: center
+
+    .right_news .right_social .icons .icon
+      margin: 0 8px 16px
+
+  .right_news_head
+    margin-bottom: 10px
+
+  .right_news_date
+    margin-bottom: 5px
+
+  .owl-carousel-news
+    display: block
+
+  .main_content .right_news
+    .right_news_list
+      display: flex
+      justify-content: center
+      overflow: hidden
+
+      .right_new
+        min-width: 220px
+        margin: 5px
+        max-height: 104px
+
+    width: 100%
+    margin: 15px 0px
+
+  .arrow_down
+    position: absolute
+    bottom: -14px
+    display: inline-flex
+    justify-content: center
+    border-radius: 50%
+    align-items: flex-end
+    background-color: #2B2B2B
+    width: 28px
+    height: 28px
+    z-index: -1
+    left: 50%
+
+    img
+      position: absolute
+      bottom: 3px
+
+  .header .header_top
+    height: 45px
+    align-items: center
+    justify-content: space-around
+    border-bottom: 1px solid #E5E5E5
+
+  .header_bottom_text
+    display: block
+    text-align: center
+    font-weight: bold
+    text-transform: uppercase
+
+  .header .header_bottom
+    height: 35px
+    border-bottom: 3px solid #E03D22
+    align-items: center
+    justify-content: center
+
+  .container
+    margin-top: 84px
+
+  .btn_user
+    display: block
+    width: 35px
+    height: 35px
+    background: url(../i/user.svg) no-repeat 50% 50%
+    cursor: pointer
+
+  .btn_open
+    display: block
+    width: 35px
+    height: 35px
+    background: url(../i/burger.svg) no-repeat 50% 50%
+    cursor: pointer
+
+  .btn_close
+    display: block
+    width: 35px
+    height: 35px
+    background: url(../i/close.svg) no-repeat 50% 50%
+    cursor: pointer
+
+  .header .header_top .logo
+    background: url(../i/logo2.svg) no-repeat 50% 50%
+    width: 90px
+    height: 40px
+
+  .period_text, .day, .week, .month
+    display: none
+
+  .main_content .content .top_bar .top_time .period .period_date
+    font-size: 10px
+    line-height: 14px
+    padding: 6px 4px
+    margin: 0 4px
+
+  .testselect2
+    display: block
+
+  .active
+    display: block
+    position: absolute
+    top: 47px
+    width: 100%
+    background: #2B2B2B
+    z-index: 12
+
+  .container .left_menu_bottom .manager
+    text-align: center
+
+  .down_box_text
+    display: none
+
+  .down_box
+    display: block
+    position: absolute
+    top: 83px
+    width: 100%
+    background-color: #2B2B2B
+
+  .down_box_text li
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    margin: 0 4px
+    padding: 4px
+    border-bottom: 1px solid  #5C5C5C
+
+    &:last-child
+      border-bottom: none
+
+      .number
+        color: #05A088
+
+  .down_box_describe
+    display: flex
+    align-items: center
+    font-size: 16px
+    line-height: 22px
+    margin-left: 11px
+
+    span
+      padding: 0 4px
+
+  .active-card
+    display: block
+    position: absolute
+    top: 46px
+    width: 100%
+    z-index: 12
+    background-color: #2B2B2B
+
+  .total_sum
+    text-align: right
+    font-size: 24px
+    line-height: 33px
+    padding: 0 8px
+    border-bottom: 1px solid #5C5C5C
+
+  .user_card_name
+    font-size: 20px
+    line-height: 27px
+
+  .user_card_icons
+    padding: 8px
+    display: flex
+    justify-content: space-around
+    align-items: center
