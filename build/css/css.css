@@ -445,8 +445,7 @@ ul {
     margin: 15px 0px; }
     .main_content .right_news .right_news_list {
       display: flex;
-      justify-content: center;
-      overflow: hidden; }
+      overflow: scroll; }
       .main_content .right_news .right_news_list .right_new {
         min-width: 220px;
         margin: 5px;
